@@ -1,0 +1,71 @@
+/* 1. Impor font Nunito */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+/* 2. Mengatur body iframe agar tidak ada margin */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* 3. Masing-masing kartu (link) */
+.kartu-item {
+  font-family: "Nunito", sans-serif;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.kartu-item:hover {
+  transform: scale(1.05);
+}
+
+.kartu-ikon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #0d9488;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0; 
+}
+
+.kartu-ikon {
+  color: #0d9488;
+  font-size: 4rem;
+  line-height: 1;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* 6. Judul Kartu */
+.kartu-judul {
+  font-weight: 700;
+  color: #1f2937;
+  font-size: 1rem;
+  margin: 0 0 0.25rem 0;
+}
+
+/* 7. Deskripsi Kartu */
+.kartu-deskripsi {
+  color: #4b5563;
+  font-size: 0.875rem;
+  margin: 0;
+}
